@@ -22,13 +22,11 @@ plot3 <- function(fname = NULL, hpcData = NULL){
         
         if (is.null(fname)) {
                 lwd <- 0
-                xlab <- "datetime"
         } else {
                 dev.on(fname)
                 lwd <- 1
-                xlab <- ""
         }
-        plot(hpc.data$Time, hpc.data$Sub_metering_1, type="l", ylab=esm.label, xlab=xlab)
+        plot(hpc.data$Time, hpc.data$Sub_metering_1, type="l", ylab=esm.label, xlab="")
         lines(hpc.data$Time,hpc.data$Sub_metering_2, col="red" )
         lines(hpc.data$Time,hpc.data$Sub_metering_3, col="blue" )
         legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),lty = c(1,1,1)

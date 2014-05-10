@@ -19,15 +19,11 @@ plot2 <- function(fname = NULL, hpcData = NULL){
         }       
         gap.label <-"Global Active Power (kilowats)"
         
-        if (is.null(fname)) {
-                xlab <- "datetime"
-
-        } else {
+        if (!is.null(fname)) {
                 dev.on(fname)
-                xlab <- ""
         }
         
         plot(hpc.data$Time, hpc.data$Global_active_power, type="l"
-             , ylab=gap.label, xlab=xlab)
+             , ylab=gap.label, xlab="")
         if (!is.null(fname)) dev.off()   
 }

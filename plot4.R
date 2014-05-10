@@ -16,11 +16,11 @@ source("plot3.R")
 plot4b <- function(hpc.data){
         grp.label <-"Global Reactive Power (kilowats)"
         
-        plot(hpc.data$Time, hpc.data$Global_reactive_power, type="l", ylab=grp.label, xlab="")
+        plot(hpc.data$Time, hpc.data$Global_reactive_power, type="l", ylab=grp.label, xlab="datetime")
 }
 
 plot4a <- function(hpc.data){
-        plot(hpc.data$Time, hpc.data$Voltage, type="l", ylab="Voltage", xlab="")
+        plot(hpc.data$Time, hpc.data$Voltage, type="l", ylab="Voltage", xlab="datetime")
 }
 
 plot4 <- function(fname = NULL, hpcData = NULL) {
