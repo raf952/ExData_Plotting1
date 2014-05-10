@@ -1,3 +1,4 @@
+# Ralph A Foy
 loadHpcData <- function () {
         filename <- "data/household_power_consumption.txt"
         hpc.data <- read.csv(file=filename,sep=";", na.strings="?")
