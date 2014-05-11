@@ -11,7 +11,7 @@ loadHpcData <- function () {
 
 # open png file for output
 dev.on <- function(name) {
-        png(name, width=480, height=480, units="px" )
+        png(name, width=480, height=480, units="px", bg="transparent")
 }
 
 source("plot2.R")

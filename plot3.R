@@ -11,7 +11,7 @@ loadHpcData <- function () {
 
 # open png file for output
 dev.on <- function(name) {
-        png(name, width=480, height=480, units="px" )
+        png(name, width=480, height=480, units="px", bg="transparent")
 }
 
 # generates plot3, sending image to screen if fname is NULL, and loading data
