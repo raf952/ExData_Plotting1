@@ -22,7 +22,7 @@ plot1 <- function(fname = NULL, hpcData = NULL){
         } else {
                 hpcData
         }
-        gap.label <-"Global Active Power (kilowats)"
+        gap.label <-"Global Active Power (kilowatts)"
         if (!is.null(fname)) dev.on(fname)
         hist(hpc.data$Global_active_power, col="red", main="Global Active Power", xlab=gap.label, ylab="Frequency")
         if (!is.null(fname)) dev.off()   

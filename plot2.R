@@ -22,10 +22,11 @@ plot2 <- function(fname = NULL, hpcData = NULL){
         } else {
                 hpcData
         }       
-        gap.label <-"Global Active Power (kilowats)"
+        gap.label <-"Global Active Power"
         
         if (!is.null(fname)) {
                 dev.on(fname)
+                gap.label <- paste(gap.label, "(kilowatts)")
         }
         
         plot(hpc.data$Time, hpc.data$Global_active_power, type="l"

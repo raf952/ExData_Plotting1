@@ -19,7 +19,7 @@ source("plot3.R")
 
 # generates Global Reactive Power plot in lower right quadrant of plot4
 plot4b <- function(hpc.data){
-        grp.label <-"Global Reactive Power (kilowats)"
+        grp.label <-"Global_reactive_power"
         
         plot(hpc.data$Time, hpc.data$Global_reactive_power, type="l", ylab=grp.label, xlab="datetime")
 }
